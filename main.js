@@ -41,6 +41,6 @@ function surprise() {
 		var popUpImg = document.getElementById("popUp");
 		document.body.removeChild(popUpImg);
 		alert("Coming soon!");
-	}, 1000);
+	}, 3000);
 	return false;
 }
