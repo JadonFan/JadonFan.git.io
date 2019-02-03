@@ -23,7 +23,7 @@
 
 
 <!--Javascript-->
-<script src="main.js"> </script>
+<script type="text/javascript" src="main.js"> </script>
 <!--End of Javascript-->
 
 
@@ -37,26 +37,29 @@
 
 		<nav id="customnavbar">
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">Home </a></li>
 				<li><a href="About.html">About Me</a></li>
 				<li><a href="Blog.html">Blog</a></li>
 				<li><a href="Academics.html">Academics</a></li>
 				<li onclick="surprise()"><a>More</a></li>
-			<ul>
+			</ul
 		</nav>
 	</div>
 
 	<div style="margin-left: 10px">
 		<h3> Programming Languages </h3>
 		<em> Hover your cursor over a tag to see more details </em>
-		<ul class="knowmetag"> 
-			<li> Python </li>  
-			<li> Java </li>
-			<li> C++ </li>
-			<li> Javascript </li>
-			<li> SQL </li>
-			<li> HTML/CSS </li>
-			<li> XML </li>
+		<ul class="knowmetag hoverabletag"> 
+			<li onmouseover="showTagDetails(this, 0, 36, 'Third person shooting game (pygame)')" onmouseout="hideTagDetails(this)"> 
+				Python <span> </span>
+			</li>  
+			<li onmouseover="showTagDetails(this, 1, 18)" onmouseout="hideTagDetails(this)"> Java <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 2)" onmouseout="hideTagDetails(this)"> C++ <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 3)" onmouseout="hideTagDetails(this)"> Javascript <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 4)" onmouseout="hideTagDetails(this)"> SQL <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 5)" onmouseout="hideTagDetails(this)"> HTML/CSS <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 6)" onmouseout="hideTagDetails(this)"> XML <span> </span> </li>
+		</ul>
 	</div>
 	<hr>
 	<div style="margin-left: 10px">
@@ -69,6 +72,7 @@
 			<li> Android SDK </li>
 			<li> Swing </li>
 			<li> OpenGL </li>
+		</ul>
 	</div>
 	<hr>
 	<div style="margin-left: 10px">
@@ -78,26 +82,31 @@
 			<li> Jira </li>  
 			<li> Jenkins </li>
 			<li> JMeter </li>
+		</ul>
 	</div>
 	<hr>
 	<div style="margin-left: 10px">
 		<h3> Relevant Courses </h3>
 		<em> Hover your cursor over a tag to see details for the course </em>
-		<ul class="knowmetag"> 
+		<ul class="knowmetag hoverabletag"> 
 			<li class="expandedtag"> Data Structures and Algorithms </li>  
 			<li class="expandedtag"> Introduction to Programming </li>
 			<li class="expandedtag"> Digital Circuits and Systems </li>
 			<li class="expandedtag"> Digital Computers </li>
 			<li class="expandedtag"> Advanced Calculus I </li>
 			<li class="expandedtag"> Numerical Methods </li>
+		</ul>
 	</div>
 	<hr>
 	<div style="margin-left: 10px">
 		<h3> Interests </h3>
 		<ul class="knowmetag"> 
 			<li> Chess </li>  
+			<li> Cooking </li>
 			<li> Table Tennis </li>
 			<li> Programming </li>
+			<li> Gardening </li>
+		</ul>
 	</div>
 	<hr>
 

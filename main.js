@@ -15,7 +15,7 @@ function getTodayDate() {
 	if (monthIndex == 3 && date == 9) {
 		dateMessage = "<text style='color:white;'> <b> Happy Birthday to Myself! </b> </text>";
 	} else {
-		dateMessage = "<text style='color:white;'> <b>" + monthString + " " + date + ", " + year + "</b> </text>";
+		dateMessage = `<text style='color:white;'> <b> ${monthString} ${date}, ${year} </b> </text>`;
 	}
 
 	document.getElementById("todaydate").innerHTML = dateMessage;
@@ -43,4 +43,50 @@ function surprise() {
 		alert("Coming soon!");
 	}, 3000);
 	return false;
+}
+
+function getChildIndex(element) {
+	var index = 0;
+	while ((element = element.previousSibling) != null) {
+		index++
+	}
+
+	return index;
+}
+
+function showTagDetails(listElement, index, expTimeMonths="unknown", ...projects) {
+	var spanElement = listElement.getElementsByTagName("span")[0];
+	spanElement.style.visibility = "visible";
+	spanElement.style.left = 10 + index * 125 + "px";
+
+	var expTimeFormat = expTimeMonths;
+	if (typeof expTimeMonths === "number") {
+		if (expTimeMonths < 12) {
+			expTimeFormat = `${expTimeMonths} months`;
+		} else if (expTimeMonths % 12 == 0) {
+			expTimeFormat = `${Math.floor(expTimeMonths / 12)} years`; 
+		} else {
+			expTimeFormat = `${Math.floor(expTimeMonths / 12)} years and ${expTimeMonths % 12} months`; 
+		}
+	}
+
+	spanElement.innerHTML = 
+	`
+	<b>Experience</b>: ${expTimeFormat}
+	<br>
+	<b>Relevant Projects</b>: <br>
+	`;
+
+	for (var i = 0; i < Array.from(projects).length; i++) {
+		spanElement.innerHTML += `&nbsp; &nbsp; &#x25CF; ${projects[i]} <br>`;
+	}
+
+	return;
+}
+
+
+function hideTagDetails(listElement) {
+	var spanElement = listElement.getElementsByTagName("span")[0];
+	spanElement.style.visibility = "hidden";
+	return;
 }

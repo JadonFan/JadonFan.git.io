@@ -40,7 +40,7 @@ class Quiz extends MiniGame {
 
 	// currQuestionIndex is the index of the current question in the this.questions array
 	// userAnswer is the user's input 
-	playQuestion(currQuestionIndex, userAnswer, score) {
+	playQuestion(currQuestionIndex, score, userAnswer) {
 		try {
 			return (this.questions[currQuestionIndex].answer == userAnswer) ? score + 1 : score;
 		} catch (e) {

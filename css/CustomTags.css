@@ -9,14 +9,13 @@
 }
 
 .knowmetag li{
-	display:inline;
+	display: inline;
 	margin: 0 0 5px 5px;
 	float: left;
 	height: 25px;
 	width: 120px;
 	border: 0.5px solid black;
 	border-radius: 10px;
-	box-sizing: border-box;
 	background-color: white;
 	font-family: verdana;
 	text-align: center;
@@ -32,4 +31,30 @@ hr {
 	padding: 10px;
 	height: auto !important;
 	width: auto !important;
+}
+
+.hoverabletag li span {
+	visibility: hidden;
+	width: 500px;
+	height: 200px;
+	background-color: black;
+	padding: 10px 10px 10px 10px;
+	opacity: 0.85;
+	color: white;
+	text-align: left;
+  	position: absolute;
+  	z-index: 5;
+	border: 0.5px solid black;
+	margin-top: 25px;
+}
+
+.hoverabletag li span::after {
+ 	content: " ";
+  	position: absolute;
+  	bottom: 100%;  
+  	left: 10px;
+  	margin-left: 45px;
+  	border-width: 10px;
+  	border-style: solid;
+  	border-color: transparent transparent black transparent;
 }
