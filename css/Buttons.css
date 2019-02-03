@@ -1,0 +1,51 @@
+@media screen and (max-width: 755px) {
+	.std-button {
+		margin-top: 10px;
+		height: 70px;
+		width: 70px;
+		text-decoration-style: none;
+		color: black;
+	}
+
+	.std-button img {
+		float: left;
+		height: 60px;
+	}
+
+	.std-button text {
+		display: none;
+	}
+
+	.std-button:visited {
+		text-decoration-style: none;
+		color: black;
+	}
+}
+
+@media screen and (min-width: 755px) {
+	.std-button {
+		margin-left:20px;
+		margin-top:10px;
+		height: 70px;
+		width: 210px;
+		text-decoration-style: none;
+		color: black;
+	}
+
+	.std-button img {
+		float: left;
+		height: 60px;
+		font-size: 30px;
+	}
+
+	.std-button text {
+		padding-left: 12.5px;
+		padding-right: 12.5px;
+		text-align: center;
+	}
+
+	.std-button:visited {
+		text-decoration-style: none;
+		color: black;
+	}
+}

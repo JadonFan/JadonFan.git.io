@@ -1,0 +1,116 @@
+body {
+	margin-top: 0px;
+	overflow-y: scroll;
+}
+
+#pagetitle {
+	text-align: center;
+	font-family: serif;
+	font-size: 50px;
+	margin: 0px;
+	background-color: #505050;
+	color: white;
+}
+
+#minpagetitle {
+	text-align: center;
+	font-family: serif;
+	font-size: 50px;
+	margin: 0px;
+	background-color: #505050;
+	color: white;
+	display: none;
+}
+
+@media screen and (max-width: 765px) {
+	#pagetitle {
+		display: none;
+	}
+
+	#minpagetitle {
+		display: block;
+	}
+}
+
+#mainheader {
+	width: 100%;
+	position: fixed;
+	z-index: 50;
+}
+
+#todaydate {
+	position: fixed;
+	top: 30px;
+	right: 5px;
+	margin-right: 5px;
+}
+
+nav ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	border: 2px solid #505050;
+	background-color: white;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav li {
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	width: 20%;
+	border-right: 2px solid #505050;
+}
+
+nav li a {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+nav li:hover {
+	background-color: #6ed220;
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+nav li a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.layoutAC1 {
+	position: relative;
+	top: 120px;
+	float: left;
+	width: 30%;
+	padding: 10px;
+ }
+
+.layoutAC1 a {
+	float: left;
+	display: inline-block;
+}
+
+.layoutAC2 {
+	position: relative;
+	top: 120px;
+	float: right;
+	width: 70%;
+	padding: 10px;
+}
+
+footer {
+	position: absolute;
+ 	right: 0;
+  	bottom: 0;
+  	left: 0;
+   	width: 100%;
+   	background-color: #505050;
+   	color: white;
+   	text-align: center;
+}

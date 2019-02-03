@@ -1,0 +1,35 @@
+.knowmetag {
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0;
+}
+
+.knowmetag li:first-child{
+	margin-left: 0;
+}
+
+.knowmetag li{
+	display:inline;
+	margin: 0 0 5px 5px;
+	float: left;
+	height: 25px;
+	width: 120px;
+	border: 0.5px solid black;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: white;
+	font-family: verdana;
+	text-align: center;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333; 
+}
+
+.expandedtag {
+	padding: 10px;
+	height: auto !important;
+	width: auto !important;
+}
