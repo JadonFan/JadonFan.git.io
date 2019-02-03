@@ -60,6 +60,7 @@ function showTagDetails(listElement, index, expTimeMonths="unknown", ...projects
 	spanElement.style.left = 10 + index * 125 + "px";
 
 	var expTimeFormat = expTimeMonths;
+	// convert the experience time to a suitable format when displayed
 	if (typeof expTimeMonths === "number") {
 		if (expTimeMonths < 12) {
 			expTimeFormat = `${expTimeMonths} months`;
