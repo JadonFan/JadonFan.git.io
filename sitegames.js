@@ -31,7 +31,7 @@ class Quiz extends MiniGame {
 
 	chooseRelevantQuestions() {
 		try {
-			console.log("Hello");
+			var random = 1;
 		} catch (e) {
 			throw "Did you remember to set the questions for the class first?";
 		}
@@ -42,9 +42,15 @@ class Quiz extends MiniGame {
 	// userAnswer is the user's input 
 	playQuestion(currQuestionIndex, score, userAnswer) {
 		try {
-			return (this.questions[currQuestionIndex].answer == userAnswer) ? score + 1 : score;
+			if (typeof userAnswer === "number" || typeof userAnswer === "string" || userAnswer instanceof String) {
+				return (this.questions[currQuestionIndex].answer == userAnswer) ? score + 1 : score;
+			} else {
+				console.log("The user's answer is neither a number or string!");
+			}
 		} catch (e) {
 			throw "Did you remember to set the questions for the class first?";
-		}
+		} finally {
+			return null;
+		} 
 	}
 }

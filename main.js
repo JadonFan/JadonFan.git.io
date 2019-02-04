@@ -45,6 +45,13 @@ function surprise() {
 	return false;
 }
 
+function monthDiff(d1, d2) {
+    var months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth() + 1;
+    months += d2.getMonth();
+    return months <= 0 ? 0 : months;
+}
+
 function getChildIndex(element) {
 	var index = 0;
 	while ((element = element.previousSibling) != null) {
@@ -54,26 +61,30 @@ function getChildIndex(element) {
 	return index;
 }
 
-function showTagDetails(listElement, index, expTimeMonths="unknown", ...projects) {
+function showTagDetails(listElement, index, expSince="unknown", profLevel="unknown", ...projects) {
 	var spanElement = listElement.getElementsByTagName("span")[0];
 	spanElement.style.visibility = "visible";
 	spanElement.style.left = 10 + index * 125 + "px";
 
-	var expTimeFormat = expTimeMonths;
+	var expTimeFormat = expSince;
 	// convert the experience time to a suitable format when displayed
-	if (typeof expTimeMonths === "number") {
-		if (expTimeMonths < 12) {
-			expTimeFormat = `${expTimeMonths} months`;
-		} else if (expTimeMonths % 12 == 0) {
-			expTimeFormat = `${Math.floor(expTimeMonths / 12)} years`; 
+	if (expSince instanceof Date) {
+		var today = new Date();
+		var monthsDiff = monthDiff(expSince, today);
+		if (monthsDiff < 12) {
+			expTimeFormat = `${monthsDiff} months`;
+		} else if (monthsDiff % 12 == 0) {
+			expTimeFormat = `${Math.floor(monthsDiff / 12)} years`; 
 		} else {
-			expTimeFormat = `${Math.floor(expTimeMonths / 12)} years and ${expTimeMonths % 12} months`; 
+			expTimeFormat = `${Math.floor(monthsDiff / 12)} years and ${monthsDiff % 12} months`; 
 		}
-	}
+	} 
 
 	spanElement.innerHTML = 
 	`
-	<b>Experience</b>: ${expTimeFormat}
+	<b>Experience</b>: ${expTimeFormat} 
+	<br>
+	<b>Proficiency</b>: ${profLevel} / 10
 	<br>
 	<b>Relevant Projects</b>: <br>
 	`;
