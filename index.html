@@ -27,7 +27,9 @@
 
 
 <body>
-	<div id="mainheader" tyle="background-color:#e1ee10;">
+<div id="mainwrapper">
+
+	<div id="mainheader" style="background-color:#e1ee10;">
 		<h1 id="pagetitle"> Jadon Fan's Personal Website </h1>
 		<h1 id="minpagetitle"> Jadon </h1>
 
@@ -41,11 +43,11 @@
 				<li><a href="Blog.html">Blog</a></li>
 				<li><a href="Academics.html">Academics</a></li>
 				<li onclick="surprise()"><a id="surprise">More</a></li>
-			<ul>
+			</ul>
 		</nav>
 	</div>
 
-	<div>
+	<div id="mainbody">
 		<div class="layoutAC1">
 			<a href="PublicFiles/JiajunFanResume.pdf">
 				<button type="button" class="std-button">
@@ -97,20 +99,22 @@
 		</div>
 	</div>
 
-		<div class="layoutAC2">
-			<iframe src="https://calendar.google.com/calendar/embed?src=jdsare%40gmail.com&ctz=America%2FToronto" style="border: 0" 
-			width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	<div class="layoutAC2">
+		<!--temporary, the following br tags should be replaced with a window-wide white empty block using the div tag-->
+		<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+	</div>
+
+	<footer>
+		<!--temporary, more text will be added to the footer in the future-->
+		<div id="mainfootertext">
+			<br> <a href="mailto:j53fan@edu.uwaterloo.ca?Subject=Regarding%20Your%20Website" target="_top"> <img src="ImgRes/emaillogo.png" alt="email" height="30" width="30"> Email </a> <br> 
 		</div>
 
+		<br> <br> <br> <br> 
+		Jadon Fan &#169; 2019. Used under the permission of the author with acknowledgement to those who helped the author with the site. 
+	</footer>  
 
-	<!-- <footer>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		Jadon Fan &#169; 2019. Used under the permission of the author with acknowledgement to those who helped me with the site.
-	</footer> -->
+</div>
 </body>
 
 </html>
