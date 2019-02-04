@@ -2,7 +2,6 @@ function getScrollTop() {
   return window.pageYOffset ||  (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
 }
 
-
 function getTodayDate() {
 	var fullDate = new Date();
 	let year = fullDate.getFullYear();

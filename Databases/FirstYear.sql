@@ -1,0 +1,7 @@
+USE Academics; 
+
+
+CREATE TABLE FirstYear
+	SELECT * FROM Term1A
+	UNION ALL
+	SELECT * FROM Term1B;
