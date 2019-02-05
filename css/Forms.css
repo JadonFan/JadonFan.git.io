@@ -1,0 +1,18 @@
+.medform textarea {
+	resize: none;
+	min-height: 160px;
+	position: relative;
+	bottom: 0;
+	z-index: 1;
+}
+
+.medform input {
+	font-weight: bold;
+	color: white;
+}
+
+.medform textarea {
+	width: 90%;
+	background-color: yellow;
+	border: 1px solid black;
+}

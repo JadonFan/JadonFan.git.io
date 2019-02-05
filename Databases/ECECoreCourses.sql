@@ -1,4 +1,4 @@
-USE Academics;
+USE academics;
 
 
 DROP TABLE IF EXISTS AllGrades;
@@ -28,14 +28,19 @@ ALTER TABLE RepeatedCourses
 ADD PRIMARY KEY (failID);
 
 ALTER TABLE RepeatedCourses
-MODIFY failID int AUTO_INCREMENT /* start at 1 */ FIRST;
+MODIFY failID int AUTO_INCREMENT FIRST;
 
 
 DROP TABLE IF EXISTS GradesBySubject;
 CREATE TABLE GradesBySubject 
-	SELECT 'Valid Grade' AS Validity, AVG(Grade) AS SubjectAverage, COUNT(Subject) AS SubjectTakenCount
+	SELECT (CASE
+		WHEN AVG(Grade) > 80 THEN 'Excellent'
+		WHEN AVG(Grade) > 70 THEN 'Good'
+		WHEN AVG(Grade) > 60 THEN 'Pass'
+		ELSE 'Fail'
+		END) AS Standing, AVG(Grade) AS SubjectAverage, COUNT(Subject) AS SubjectTakenCount
 	FROM AllGrades
-	GROUP BY Subject HAVING AVG(Grade) > 0
+	GROUP BY Subject HAVING AVG(Grade) > 0 /* in case a "rogue" course exists in the database */
 	ORDER BY Subject ASC;
 
 

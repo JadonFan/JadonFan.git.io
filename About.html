@@ -38,13 +38,7 @@
 			<script type="text/javascript"> getTodayDate() </script>
 		</span>
 		<nav id="customnavbar">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="About.html">About Me</a></li>
-				<li><a href="Blog.html">Blog</a></li>
-				<li><a href="Academics.html">Academics</a></li>
-				<li onclick="surprise()"><a id="surprise">More</a></li>
-			</ul>
+			<script type="text/javascript"> createNavBar() </script>
 		</nav>
 	</div>
 
@@ -54,15 +48,17 @@
 		<h3> Programming Languages </h3>
 		<em> Hover your cursor over a tag to see more details </em>
 		<ul class="knowmetag hoverabletag"> 
-			<li onmouseover="showTagDetails(this, 0, new Date(2015, 8, 1), 9, 'Third person shooting game (pygame)')" onmouseout="hideTagDetails(this)"> 
+			<li onmouseover="showTagDetails(this, 0, new Date(2015, 8, 1), 9, 'Third person shooting game with 2D and 3D graphics', 'Sudoku on the command line interface', 'Assignment test scripts on the bash shell', 'Various University assignments in programming courses')" onmouseout="hideTagDetails(this)"> 
 				Python <span> </span>
 			</li>  
-			<li onmouseover="showTagDetails(this, 1, new Date(2018, 1, 1), 9)" onmouseout="hideTagDetails(this)"> Java <span> </span> </li>
-			<li onmouseover="showTagDetails(this, 2, new Date(2017, 8, 7), 7)" onmouseout="hideTagDetails(this)"> C++ <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 1, new Date(2018, 1, 1), 9, 'Tic-tac-toe and card game app for Android', 'Trip planner desktop app', 'Automated RMI and API tests for EMR software (co-op)')" onmouseout="hideTagDetails(this)"> Java <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 2, new Date(2017, 8, 7), 7, 'Controllable and movable Arduino pitching machine', 'Various University assignments in programming courses')" onmouseout="hideTagDetails(this)"> C++ <span> </span> </li>
 			<li onmouseover="showTagDetails(this, 3, new Date(2019, 0, 15), 3)" onmouseout="hideTagDetails(this)"> Javascript <span> </span> </li>
 			<li onmouseover="showTagDetails(this, 4, new Date(2019, 0, 10), 5)" onmouseout="hideTagDetails(this)"> SQL <span> </span> </li>
 			<li onmouseover="showTagDetails(this, 5, new Date(2019, 0, 24), 5)" onmouseout="hideTagDetails(this)"> HTML/CSS <span> </span> </li>
-			<li onmouseover="showTagDetails(this, 6, new Date(2019, 2, 1), 4)" onmouseout="hideTagDetails(this)"> XML <span> </span> </li>
+			<li onmouseover="showTagDetails(this, 6, new Date(2019, 2, 1), 4, 'Tic-tac-toe and card game app for Android')" onmouseout="hideTagDetails(this)">  
+				XML <span> </span> 
+			</li>
 		</ul>
 	</div>
 	<hr>
@@ -134,9 +130,9 @@
 	<hr>
 	<div style="margin-left: 10px">
 		<h3> Biography </h3>
-		<p style="text-align:justify;margin: 0 30px 450px 30px;font-size:15px;">
+		<p style="text-align:left;margin: 0 30px 450px 30px;font-size:15px;">
 			I am Jadon Fan. I study Computer Engineering at the University of Waterloo in Ontario, Canada. I am part of the graduating class of 2022 and currently in my second
-			year of study. I am part of the University's co-op program, which means that I alternate between study terms and work terms every 4 months. I hope you enjoy exploring my website, which I am using to create my dream website and gain experience with web development. I am always open to feedback on how I can improve the website (or the code!), so please feel free to email me if you have any feedback. 
+			year of study. I am part of the University's co-op program, which means that I alternate between study terms and work terms every 4 months. I hope you enjoy exploring my website, which I am using to create my dream website and gain experience on web development. I am always open to feedback on how I can improve the website (or the code!), so please feel free to email me, or go to the home page and fill out the form. 
 			<br> <br>
 			I may or may not post a picture of myself on my website in the future depending on whether or not I can find a "decent" up-to-date picture of myself.
 			Otherwise, my biography will just be all text.

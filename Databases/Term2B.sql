@@ -1,7 +1,7 @@
-USE Academics;
+USE academics;
 
 
 DROP TABLE IF EXISTS Term2B;
 CREATE TABLE Term2B AS
-SELECT * 
-FROM Term1A; 
+	SELECT * 
+	FROM Term1A; 

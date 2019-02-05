@@ -1,4 +1,4 @@
-USE Academics;
+USE academics;
 
 
 CREATE TABLE IF NOT EXISTS Term1A (

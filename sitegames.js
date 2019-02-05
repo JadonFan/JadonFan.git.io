@@ -53,4 +53,10 @@ class Quiz extends MiniGame {
 			return null;
 		} 
 	}
+
+	printQuestions() {
+		for (let q of questions) {
+			console.log(q.question);
+		}
+	}
 }

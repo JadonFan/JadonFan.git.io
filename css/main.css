@@ -50,15 +50,20 @@ body {
  	overflow: hidden;
  	display: block;
  	position: relative;
- 	padding-bottom: 200px;
 }
-
 
 #todaydate {
 	position: fixed;
 	top: 30px;
 	right: 5px;
 	margin-right: 5px;
+}
+
+#mainbody {
+	position: relative;
+	height: 900px;
+	bottom: 210px;
+	margin-top: 200px;
 }
 
 nav ul {
@@ -96,10 +101,12 @@ nav li a:hover, nav li a:visited {
 
 .layoutAC1 {
 	position: relative;
-	top: 120px;
+	margin-top: 0px;
+	top: 100px;
+	height: 90%;
 	float: left;
-	width: 30%;
-	padding: 10px;
+	width: 20%;
+	padding: 12px 12px 0 12px;
  }
 
 .layoutAC1 a {
@@ -116,10 +123,10 @@ nav li a:hover, nav li a:visited {
 }
 
 footer {
+	height: 200px;
    	width: 100%;
    	background-color: #505050;
    	color: white;
-   	height: 200px;
    	text-align: center;
    	position: absolute;
    	bottom: 0;
