@@ -120,16 +120,14 @@ function hideTagDetails(listElement) {
 	return;
 }
 
+
 function getFormData() {
-	text = (document.getElementsByClassName("medform")[0]).innerHTML;
-	var req = new XMLHttpRequest();
-    req.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			alert("feedback submitted!");
-		}
-    };
-    req.open("GET", "form.asp?q=" + text, true);
-    req.send();
+    var url = window.location.href;
+	var matchResult = url.match(new RegExp("https://(\..+){2,}\?feedback=\+(.+).*"));
+
+	if (matchResult.length >= 3) { // the whole match counts as 1 captured group 
+		/* */
+	}
 }
 
 
