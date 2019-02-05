@@ -120,6 +120,18 @@ function hideTagDetails(listElement) {
 	return;
 }
 
+function getFormData() {
+	text = (document.getElementsByClassName("medform")[0]).innerHTML;
+	var req = new XMLHttpRequest();
+    req.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			alert("feedback submitted!");
+		}
+    };
+    req.open("GET", "form.asp?q=" + text, true);
+    req.send();
+}
+
 
 // with help from random strangers on the internet
 /*
