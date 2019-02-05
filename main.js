@@ -6,7 +6,7 @@ function surprise() {
 	var popUpSurprise = function() {
 		var popUpImg = document.createElement("IMG");
 		popUpImg.setAttribute("id", "popUp");
-		popUpImg.setAttribute("src", "thumbsup.gif");
+		popUpImg.setAttribute("src", "ImgRes/thumbsup.gif");
 		popUpImg.setAttribute("alt", "Thumbs Up Surprise");
 		popUpImg.style.position = "absolute";
 		popUpImg.style.top = "100px";

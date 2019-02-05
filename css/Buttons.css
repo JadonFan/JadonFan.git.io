@@ -1,5 +1,5 @@
 @media screen and (max-width: 1350px) {
-	.std-button {
+	.stdbutton {
 		margin-top: 10px;
 		margin-left: 25px;
 		height: 70px;
@@ -8,23 +8,23 @@
 		color: black;
 	}
 
-	.std-button img {
+	.stdbutton img {
 		float: left;
 		height: 60px;
 	}
 
-	.std-button text {
+	.stdbutton text {
 		display: none;
 	}
 
-	.std-button:visited {
+	.stdbutton:visited {
 		text-decoration-style: none;
 		color: black;
 	}
 }
 
 @media screen and (min-width: 1350px) {
-	.std-button {
+	.stdbutton {
 		margin-left:20px;
 		margin-top:10px;
 		height: 70px;
@@ -33,19 +33,19 @@
 		color: black;
 	}
 
-	.std-button img {
+	.stdbutton img {
 		float: left;
 		height: 60px;
 		font-size: 30px;
 	}
 
-	.std-button text {
+	.stdbutton text {
 		padding-left: 12.5px;
 		padding-right: 12.5px;
 		text-align: center;
 	}
 
-	.std-button:visited {
+	.stdbutton:visited {
 		text-decoration-style: none;
 		color: black;
 	}
