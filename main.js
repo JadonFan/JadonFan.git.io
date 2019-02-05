@@ -10,7 +10,7 @@ function surprise() {
 		popUpImg.setAttribute("alt", "Thumbs Up Surprise");
 		popUpImg.style.position = "absolute";
 		popUpImg.style.top = "100px";
-		popUpImg.style.left = "25%";
+		popUpImg.style.left = `${window.innerWidth/2}%`;
 		popUpImg.style.zIndex = "99"; // TODO: create a file with list of z-index 
 		document.body.insertBefore(popUpImg, document.body.firstChild);
 	};
