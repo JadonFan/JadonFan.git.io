@@ -25,6 +25,7 @@
 
 <!--Javascript-->
 <script type="text/javascript" src="main.js"> </script>
+<script type="text/javascript" src="Tags.js"> </script>
 <!--End of Javascript-->
 
 
@@ -32,7 +33,7 @@
 <div id="mainwrapper">
 
 	<div id="mainheader" style="background-color:#e1ee10;">
-		<h1 id="pagetitle"> Jadon Fan's Personal Website </h1>
+		<h1 id="pagetitle"> About Me </h1>
 		<h1 id="minpagetitle"> Jadon </h1>
 
 		<span id="todaydate"> 
@@ -65,14 +66,15 @@
 	</div>
 	<hr>
 	<div style="margin-left: 10px">
-		<h3> Libraries, Frameworks and APIs </h3>
-		<ul class="knowmetag"> 
-			<li> pygame </li>  
-			<li> Bootstrap </li>
-			<li> Node.js </li>
-			<li> Angular </li>
-			<li> Swing </li>
-			<li> OpenGL </li>
+		<h3> Libraries, Frameworks, Specific Environments and APIs </h3>
+		<em> Hover your cursor over a tag to see more details </em>
+		<ul class="knowmetag hoverabletag"> 
+			<li onmouseover="showTagDetailsLess(this, 0)" onmouseout="hideTagDetails(this)"> pygame <span> </span>  </li>  
+			<li onmouseover="showTagDetailsLess(this, 1)" onmouseout="hideTagDetails(this)"> Bootstrap <span> </span>  </li>
+			<li onmouseover="showTagDetailsLess(this, 2)" onmouseout="hideTagDetails(this)"> Node.js <span> </span> </li>
+			<li onmouseover="showTagDetailsLess(this, 3)" onmouseout="hideTagDetails(this)"> Angular <span> </span> </li>
+			<li onmouseover="showTagDetailsLess(this, 4)" onmouseout="hideTagDetails(this)"> Swing <span> </span> </li>
+			<li onmouseover="showTagDetailsLess(this, 5)" onmouseout="hideTagDetails(this)"> OpenGL <span> </span> </li>
 		</ul>
 	</div>
 	<hr>

@@ -7,7 +7,7 @@ class MiniGame {
 
 class Quiz extends MiniGame {
 	constructor(questionCount, topic, questions) {
-		super(true);
+		super(true); 
 		this.questionCount = questionCount;
 		this.topic = topic;
 		this.questions = questions;

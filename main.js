@@ -73,53 +73,6 @@ function getChildIndex(element) {
 	return index;
 }
 
-function showTagDetails(listElement, index, expSince="unknown", profLevel="unknown", ...projects) {
-	var spanElement = listElement.getElementsByTagName("span")[0];
-	spanElement.style.visibility = "visible";
-	spanElement.style.left = 10 + index * 125 + "px";
-
-	var expTimeFormat = expSince;
-	// convert the experience time to a suitable format when displayed
-	if (expSince instanceof Date) {
-		var today = new Date();
-		var monthsDiff = monthDiff(expSince, today);
-		if (monthsDiff < 12) {
-			expTimeFormat = `${monthsDiff} months`;
-		} else if (monthsDiff % 12 == 0) {
-			expTimeFormat = `${Math.floor(monthsDiff / 12)} years`; 
-		} else {
-			expTimeFormat = `${Math.floor(monthsDiff / 12)} years and ${monthsDiff % 12} months`; 
-		}
-	} 
-
-	var SQLDetails = "<br>";
-	if (listElement.innerHTML.match(new RegExp(".*SQL.*"))) {
-		SQLDetails = "<br> <b>Variations</b>: mySQL, Oracle SQL <br> "
-	} 
-
-	spanElement.innerHTML = 
-	`
-	<b>Experience</b>: ${expTimeFormat} 
-	<br>
-	<b>Comfortability</b>: ${profLevel} / 10
-	${SQLDetails}
-	<b>Relevant Projects</b>: <br>
-	`;
-
-	for (var i = 0; i < Array.from(projects).length; i++) {
-		spanElement.innerHTML += `&nbsp; &nbsp; &#x25CF; ${projects[i]} <br>`;
-	}
-
-	return;
-}
-
-
-function hideTagDetails(listElement) {
-	var spanElement = listElement.getElementsByTagName("span")[0];
-	spanElement.style.visibility = "hidden";
-	return;
-}
-
 
 function getFormData() {
     var url = window.location.href;
