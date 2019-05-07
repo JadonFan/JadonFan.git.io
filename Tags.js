@@ -14,11 +14,10 @@ function showTagDetailsLess(listElement, index, ...myKnowledge) {
 function showTagDetails(listElement, index, expSince="unknown", profLevel="unknown", ...projects) {
 	var spanElement = listElement.getElementsByTagName("span")[0];
 	spanElement.style.visibility = "visible";
-	spanElement.style.left = 10 + index * 125 + "px"; // TODO: change the element's left offset relative to the user's window to reflect the element's position 
+	spanElement.style.left = 10 + index * 125 + "px"; // TODO change the element's left offset relative to the user's window to reflect the element's position 
 
 	var expTimeFormat = expSince;
-	// convert the text detailing the experience time to a suitable format when displayed
-	if (expSince instanceof Date) {
+	if (expSince instanceof Date) { 	// convert the text detailing the experience time to a suitable format when displayed
 		var today = new Date();
 		var monthsDiff = monthDiff(expSince, today);
 		if (monthsDiff < 12) {
@@ -32,7 +31,7 @@ function showTagDetails(listElement, index, expSince="unknown", profLevel="unkno
 
 	var SQLDetails = "<br>";
 	if (listElement.innerHTML.match(new RegExp(".*SQL.*"))) {
-		SQLDetails = "<br> <b>Variations</b>: mySQL, Oracle SQL <br> "
+		SQLDetails = "<br> <b>Variations</b>: mySQL, Oracle SQL, PostgreSQL <br> "  
 	} 
 
 	spanElement.innerHTML = 
