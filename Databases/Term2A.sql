@@ -1,7 +1,0 @@
-USE academics;
-
-
-DROP TABLE IF EXISTS Term2A;
-CREATE TABLE Term2A AS
-	SELECT * 
-	FROM Term1A; 
