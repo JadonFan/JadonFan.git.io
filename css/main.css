@@ -37,6 +37,10 @@ body {
 	#minpagetitle {
 		display: block;
 	}
+
+	.layoutAC1 a button {
+		margin-left: 0px;
+	}
 }
 
 #mainheader {

@@ -29,7 +29,7 @@ function createNavBar() {
 	`
 	<ul>
 		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About Me</a></li>
+		<li><a href="about.html">About</a></li>
 		<li><a href="projects.html">Projects</a></li>
 		<li><a href="academics.html">Academics</a></li>
 		<li onclick="surprise()"><a id="surprise">More</a></li>

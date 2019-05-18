@@ -33,7 +33,7 @@
 <div id="mainwrapper">
 
 	<div id="mainheader" style="background-color:#e1ee10;">
-		<h1 id="pagetitle"> About Me </h1>
+		<h1 id="pagetitle"> About </h1>
 		<h1 id="minpagetitle"> Jadon </h1>
 
 		<span id="todaydate"> 
@@ -44,28 +44,34 @@
 		</nav>
 	</div>
 
-	<div style="height:95px;width:100%;">  </div>
+	<div style="height:115px;width:100%;">  </div>
+
+	<div ng-app=""> 
+		<text style="margin-left:30px;">Search &nbsp; <input type="text"> <br> </text>
+	</div>
+
+	<hr>
 
 	<div style="margin-left: 10px">
+		<em> Some tags contain more information such as my level of experience. You can see these details by hovering your cursor over a particular tag like a tool tip. </em>
+		<br>
 		<h3> Languages </h3>
-		<em> Hover your cursor over a tag to see more details </em>
 		<ul class="knowmetag hoverabletag"> 
 			<!-- TODO  avoid tracking indices (0, 1, 2...) and "attach" each hovermenu to the corresponding box  --> 
-			<li onmouseover="showTagDetails(this, new Date(2015, 8, 1), 9, 'Third person shooting game with 2D and 3D graphics', 'Sudoku on the command line interface', 'Assignment test scripts on the bash shell', 'Various University assignments in programming courses')" onmouseout="hideTagDetails(this)"> 
+			<li onmouseover="showTagDetails(this, new Date(2015, 8, 1), 9, 'Third person shooting game with 2D and 3D graphics', 'Sudoku on the command line interface', 'Assignment test scripts on the bash shell', 'Various university assignments in programming courses')" onmouseout="hideTagDetails(this)"> 
 				<span> </span> Python 
 			</li>  
 			<li onmouseover="showTagDetails(this, new Date(2018, 1, 1), 9, 'Student planner desktop app', 'Tic-tac-toe and card game app for Android', 'Automated RMI and RESTful API tests for EMR software')" onmouseout="hideTagDetails(this)"> <span> </span> Java </li>
-			<li onmouseover="showTagDetails(this, new Date(2017, 8, 7), 7, 'Controllable and movable Arduino pitching machine', 'Various University assignments in programming courses')" onmouseout="hideTagDetails(this)"> <span> </span> C++ </li>
-			<li onmouseover="showTagDetails(this, new Date(2019, 0, 15), 5)" onmouseout="hideTagDetails(this)"> <span> </span> Javascript </li>
-			<li onmouseover="showTagDetails(this, new Date(2019, 0, 10), 5)" onmouseout="hideTagDetails(this)"> <span> </span> SQL </li>
-			<li onmouseover="showTagDetails(this, new Date(2019, 0, 24), 5)" onmouseout="hideTagDetails(this)"> <span> </span> HTML/CSS </li>
+			<li onmouseover="showTagDetails(this, new Date(2017, 8, 7), 8, 'Controllable and movable Arduino pitching machine', 'Various university assignments in programming courses')" onmouseout="hideTagDetails(this)"> <span> </span> C++ </li>
+			<li onmouseover="showTagDetails(this, new Date(2019, 0, 15), 7)" onmouseout="hideTagDetails(this)"> <span> </span> Javascript </li>
+			<li onmouseover="showTagDetails(this, new Date(2019, 0, 10), 6)" onmouseout="hideTagDetails(this)"> <span> </span> SQL </li>
+			<li onmouseover="showTagDetails(this, new Date(2019, 0, 24), 7)" onmouseout="hideTagDetails(this)"> <span> </span> HTML/CSS </li>
 			</li>
 		</ul>
 	</div>
-	<hr>
+	<br>
 	<div style="margin-left: 10px">
 		<h3> Libraries and Frameworks </h3>
-		<em> Hover your cursor over a tag to see more details </em>
 		<ul class="knowmetag hoverabletag"> 
 			<!-- Use Angular to make this code fragment more concise -->
 			<li onmouseover="showTagDetailsLess(this)" onmouseout="hideTagDetails(this)"> <span> </span> JDBC </li>
@@ -79,7 +85,7 @@
 			<li onmouseover="showTagDetailsLess(this)" onmouseout="hideTagDetails(this)"> <span> </span> Pygame  </li>  
 		</ul>
 	</div>
-	<hr>
+	<br>
 	<div style="margin-left: 10px">
 		<h3> Tools </h3>
 		<ul class="knowmetag"> 
@@ -94,7 +100,6 @@
 	<hr>
 	<div style="margin-left: 10px">
 		<h3> Relevant Courses </h3>
-		<em> Hover your cursor over a tag to see details on the course </em>
 		<ul class="knowmetag hoverabletag"> 
 			<li class="expandedtag"> Data Structures and Algorithms </li>  
 			<li class="expandedtag"> Introduction to Programming </li>
