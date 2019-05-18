@@ -52,9 +52,9 @@ hr {
  	content: " ";
   	position: absolute;
   	bottom: 100%;  
-  	left: 10px;
-  	margin-left: 45px;
+  	margin-left: 10px;
   	border-width: 10px;
   	border-style: solid;
+  	z-index: 5;
   	border-color: transparent transparent black transparent;
 }

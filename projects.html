@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en-CA">
+
+<title> Jadon </title>
+<link rel="icon" href="ImgRes/favicon.jpg" type='image/x-icon'/>
+
+<!--metadata-->
+<meta charset="UTF-8">
+<meta name="description" content="Welcome to my personal website. Feel free to explore!">
+<meta name="author" content="Jadon Fan">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--end of metadata-->
+
+
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<!--keep custom CSS after bootstrap-->
+<link rel="stylesheet" href="css/main.css">  
+<link rel="stylesheet" href="css/Buttons.css">
+<link rel="stylesheet" href="css/SpecialEffects.css">
+<link rel="stylesheet" href="css/projects.css">
+<!--end of CSS-->
+
+
+<!--------------Javascript--------------->
+<!--Angular--> <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> </script>
+<!--Custom--> 
+<script src="main.js"> </script>
+<!-----------End of Javascript----------->
+
+
+<body>
+<div id="mainwrapper">
+
+	<div id="mainheader" style="background-color:#E1EE10;">
+		<h1 id="pagetitle"> Projects </h1>
+		<h1 id="minpagetitle"> Projects </h1>
+
+		<span id="todaydate"> 
+			<script type="text/javascript"> getTodayDate() </script>
+		</span>
+		<nav id="customnavbar">
+			<script type="text/javascript"> createNavBar() </script>
+		</nav>
+	</div>
+
+	<div style="height:105px;width:100%;">  </div>
+
+	<div ng-app="">
+		<text style="margin-left:30px;">Search &nbsp; <input type="text"> </text>
+	</div>
+
+
+	<div class="container-width">
+	  	<div class="row">
+	  		<div class="col-md-3">
+				<div class="projectpane">
+					<img src="ImgRes/plannericon.png" alt="Planner" class="image img-fluid">
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<h1> Planner </h1>
+				    		<p style="font-size:13px"> A Java desktop app to help students organize their life </p>
+				    		<button class="learnmore"> Learn More </button>
+				    	</div>
+				 	 </div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="projectpane">
+					<img src="ImgRes/MyAppLogo.png" alt="Classics" class="image img-fluid">
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<h1> Classics </h1>
+				    		<p style="font-size:13px"> An Android app to play some classic games against a friend or computer </p>
+				    		<button class="learnmore"> Learn More </button>
+				    	</div>
+				 	 </div>
+				</div>
+			</div>
+
+
+			<div class="col-md-3">
+				<div class="projectpane">
+					<img src="ImgRes/madmanicon.png" alt="Classics" class="image img-fluid">
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<h1> Madman </h1>
+				    		<p style="font-size:13px"> An unique desktop FPS game written in Python </p>
+				    		<button class="learnmore"> Learn More </button>
+				    	</div>
+				 	 </div>
+				</div>
+			</div>
+		</div>
+
+		<div style="height:500px"> </div>
+
+		<footer>
+			<!--temporary, more text will be added to the footer in the future-->
+			<div id="mainfootertext">
+				<br> <a href="mailto:j53fan@edu.uwaterloo.ca?Subject=Regarding%20Your%20Website" target="_top"> <img src="ImgRes/emaillogo.png" alt="email" height="30" width="30"> Email </a> <br> 
+			</div>
+
+			<br> <br> <br> <br> 
+			Jadon Fan &#169; 2019. Used under the permission of the author with acknowledgement to those who helped the author with the site. 
+		</footer> 
+	</div>
+
+</div>
+</body>
+
+</html>

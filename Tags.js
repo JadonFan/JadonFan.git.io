@@ -1,8 +1,7 @@
 
-function showTagDetailsLess(listElement, index, ...myKnowledge) {
+function showTagDetailsLess(listElement, ...myKnowledge) {
 	var spanElement = listElement.getElementsByTagName("span")[0];
 	spanElement.style.visibility = "visible";
-	spanElement.style.left = 10 + index * 125 + "px";
 
 	for (var text of Array.from(myKnowledge)) {
 		spanElement.innerHTML += `&nbsp; &nbsp; &#x25CF; ${text} <br>`;
@@ -11,10 +10,9 @@ function showTagDetailsLess(listElement, index, ...myKnowledge) {
 	return;
 }
 
-function showTagDetails(listElement, index, expSince="unknown", profLevel="unknown", ...projects) {
+function showTagDetails(listElement, expSince="unknown", profLevel="unknown", ...projects) {
 	var spanElement = listElement.getElementsByTagName("span")[0];
 	spanElement.style.visibility = "visible";
-	spanElement.style.left = 10 + index * 125 + "px"; // TODO change the element's left offset relative to the user's window to reflect the element's position 
 
 	var expTimeFormat = expSince;
 	if (expSince instanceof Date) { 	// convert the text detailing the experience time to a suitable format when displayed
