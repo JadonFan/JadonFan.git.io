@@ -1,6 +1,8 @@
+
 function getScrollTop() {
   return window.pageYOffset ||  (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
 }
+
 
 function surprise() {
 	var popUpSurprise = function() {
@@ -21,8 +23,10 @@ function surprise() {
 		document.body.removeChild(popUpImg);
 		alert("Coming soon!");
 	}, 3000);
+
 	return false;
 }
+
 
 function createNavBar() {
 	document.getElementById("customnavbar").innerHTML = 
@@ -36,6 +40,7 @@ function createNavBar() {
 	</ul>
 	`;
 }
+
 
 function getTodayDate() {
 	var fullDate = new Date();
@@ -82,6 +87,7 @@ function getFormData() {
 		/* */
 	}
 }
+
 
 // with help from random strangers on the internet
 /*
